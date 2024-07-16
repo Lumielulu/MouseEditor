@@ -25,7 +25,7 @@ class SavedColors{
 
     void showAllSavedColors() {
         for(Colors& color : savedColors){
-            std::cout<<"Colors code: ["<<color.getAlpha()<<","<<color.getBlue()<<","<<color.getGreen()<<","<<color.getRed()<<"]. Color name saved as: "<<color.getNameColor()<<endl;
+            std::cout<<"[Color code: ["<<color.getAlpha()<<","<<color.getBlue()<<","<<color.getGreen()<<","<<color.getRed()<<"]. Color name saved as: "<<color.getNameColor()<<"],"<<endl;
         };
     };
 
