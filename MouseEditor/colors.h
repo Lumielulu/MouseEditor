@@ -18,6 +18,8 @@ class Colors {
             this ->blue = b;
             this ->nameColor = n;
         };
+
+        Colors(){};
         int getRed(){
             return this->red;
         };
@@ -33,6 +35,22 @@ class Colors {
         std::string getNameColor(){
 
             return this->nameColor;
+        };
+        void setRed(int x){
+            this->red = x;
+        };
+        void setGreen(int x){
+            this->green = x;
+        };
+        void setBlue(int x){
+            this->blue = x;
+        };
+        void setAlpha(int x){
+            this->alpha = x;
+        };
+        void setNameColor(std::string x){
+
+            this->nameColor = x;
         };
 
 };

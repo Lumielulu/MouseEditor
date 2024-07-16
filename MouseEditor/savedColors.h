@@ -8,9 +8,8 @@ class SavedColors{
     private:
         std::vector<Colors>savedColors;
     public:
-    void setSaveColor(){
-        this->savedColors = savedColors;
-    };
+
+    SavedColors(){};
     void saveColor(const Colors& color) {
         this->savedColors.push_back(color);
     };
@@ -24,9 +23,10 @@ class SavedColors{
             return this->savedColors.size();
     };
 
-
-    std::vector<Colors> getAllSavedColors(){
-        return this->savedColors;
+    void showAllSavedColors() {
+        for(Colors& color : savedColors){
+            std::cout<<"Colors code: ["<<color.getAlpha()<<","<<color.getBlue()<<","<<color.getGreen()<<","<<color.getRed()<<"]. Color name saved as: "<<color.getNameColor()<<endl;
+        };
     };
 
 };
