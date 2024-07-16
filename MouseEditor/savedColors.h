@@ -10,7 +10,7 @@ class SavedColors{
     public:
 
     SavedColors(){};
-    void saveColor(const Colors& color) {
+    void saveColor(Colors color) {
         this->savedColors.push_back(color);
     };
 
@@ -25,7 +25,7 @@ class SavedColors{
 
     void showAllSavedColors() {
         for(Colors& color : savedColors){
-            std::cout<<"[Color code: ["<<color.getAlpha()<<","<<color.getBlue()<<","<<color.getGreen()<<","<<color.getRed()<<"]. Color name saved as: "<<color.getNameColor()<<"],"<<endl;
+            std::cout<<"[Color code: ["<<color.getAlpha()<<","<<color.getBlue()<<","<<color.getGreen()<<","<<color.getRed()<<"]. Color name saved as: "<<color.getNameColor()<<"]"<<endl;
         };
     };
 
